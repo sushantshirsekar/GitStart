@@ -23,8 +23,18 @@ addItem.innerHTML = '<strong>Add Items</strong>'
 
 // y[0].style.color = 'yellow';
 
-let secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.backgroundColor = 'green';
+// let secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
 
-let thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.opacity = '0';
+// let thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.style.opacity = '0';
+
+let thirdItem = document.querySelectorAll('li');
+thirdItem[2].style.color = 'green';
+
+let oddItems = document.querySelectorAll('li:nth-child(odd)');
+
+for(var i = 0; i < oddItems.length; i++)
+{
+    oddItems[i].style.backgroundColor = 'green';
+}

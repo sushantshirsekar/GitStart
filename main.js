@@ -15,6 +15,10 @@ addItem.innerHTML = '<strong>Add Items</strong>'
 //         items[i].style.fontWeight = 'bold';
 //     }
 
-let x = document.getElementsByClassName('list-group-element');
+let x = document.getElementsByClassName('list-group-item');
 
-x[0].style.backgroundColor = 'red';
+x[0].style.backgroundColor = 'maroon';
+
+let y = document.getElementsByTagName('li');
+
+y[0].style.color = 'yellow';

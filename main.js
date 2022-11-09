@@ -24,7 +24,7 @@ addItem.innerHTML = '<strong>Add Items</strong>'
 // y[0].style.color = 'yellow';
 
 let secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.color = 'green';
+secondItem.style.backgroundColor = 'green';
 
 let thirdItem = document.querySelector('.list-group-item:nth-child(3)');
 thirdItem.style.opacity = '0';

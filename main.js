@@ -15,10 +15,16 @@ addItem.innerHTML = '<strong>Add Items</strong>'
 //         items[i].style.fontWeight = 'bold';
 //     }
 
-let x = document.getElementsByClassName('list-group-item');
+// let x = document.getElementsByClassName('list-group-item');
 
-x[0].style.backgroundColor = 'maroon';
+// x[0].style.backgroundColor = 'maroon';
 
-let y = document.getElementsByTagName('li');
+// let y = document.getElementsByTagName('li');
 
-y[0].style.color = 'yellow';
+// y[0].style.color = 'yellow';
+
+let secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.color = 'green';
+
+let thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.opacity = '0';

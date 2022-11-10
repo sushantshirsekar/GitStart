@@ -33,8 +33,60 @@ let thirdItem = document.querySelectorAll('li');
 thirdItem[2].style.color = 'green';
 
 let oddItems = document.querySelectorAll('li:nth-child(odd)');
+let evenItems = document.querySelectorAll('li:nth-child(even)');
 
 for(var i = 0; i < oddItems.length; i++)
 {
-    oddItems[i].style.backgroundColor = 'green';
+    oddItems[i].style.backgroundColor = '#90EE90';
+    oddItems[i].style.color = '#FFFFE0';
+    evenItems[i].style.backgroundColor = '#FFFFE0';
+    evenItems[i].style.color = '#90EE90';
 }
+
+let itemList = document.querySelector('#items');
+itemList.parentElement.style.backgroundColor = '#f4f4f4';
+
+//lastElementChild
+let last = document.querySelector('#items');
+last.lastElementChild.style.backgroundColor = '#ccc';
+console.log(last.lastChild);
+
+//firstElementChild
+let first = document.querySelector('#items');
+last.firstElementChild.style.backgroundColor = '#ADD8E6';
+console.log(last.firstChild);
+
+//nextSibling
+let s = document.querySelector('#sibling');
+console.log(s.nextSibling);
+s.nextElementSibling.style.color = 'blue';
+
+//previousSibling
+console.log(s.previousSibling);
+s.previousElementSibling.style.color = 'violet';
+
+// createChild
+let newDiv = document.createElement('div');
+newDiv.className = 'hellodiv';
+newDiv.id = 'div-id';
+newDiv.setAttribute('title', 'hellothere!');
+
+let newDivText = document.createTextNode('I am Sushant');
+
+newDiv.appendChild(newDivText);
+console.log(newDiv);
+newDiv.style.color = 'red';
+newDiv.style.fontSize = '30px';
+newDiv.style.fontWeight = 'bold';
+
+var insert1 = document.querySelector('#parent');
+var insert2 = document.querySelector('#sibling');
+
+insert1.insertBefore(newDiv, insert2);
+
+
+
+
+
+
+
